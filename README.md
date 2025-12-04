@@ -51,15 +51,12 @@ Project Organization
 
 Once you have downloaded the github repo, open the anaconda powershell on the root of the project and follow those instructions :
 
-> `conda create -n "Rakuten-project"`    <- It will create your conda environement
+> `uv venv --python python3.11 .uv_venv`   
 
-> `conda activate Rakuten-project`       <- It will activate your environment
+> `source .uv_venv/bin/activate`      
 
-> `conda install pip`                    <- May be optionnal
+> `uv pip install -r requirements.txt`    
 
-> `pip install -r requirements.txt`      <- It will install the required packages
-
-> `python src/data/import_raw_data.py`   <- It will import the tabular data on data/raw/
 
 > Upload the image data folder set directly on local from https://challengedata.ens.fr/participants/challenges/35/, you should save the folders image_train and image_test respecting the following structure
 
